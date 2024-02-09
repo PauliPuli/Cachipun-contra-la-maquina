@@ -47,7 +47,7 @@ function obtenerJugadaMaquina() {
     const cachipun = document.getElementById('cachipun');
 
     if (cantdejuegos > 1) {
-        cachipun.disabled = true;
+        cachipun.disabled = false;
         document.getElementById('resultado').innerHTML += '<spam id="jugada">Elige tu siguiente jugada.</spam><br><br>';
     } else {
         cachipun.disabled = false;
