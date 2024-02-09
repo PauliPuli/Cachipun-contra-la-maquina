@@ -9,6 +9,7 @@
     --blanco: #fff;
     --seleccion: #fbff04;
     --negro: #000;
+    --morado: #a011e2;
 }
 #tijera {
     rotate:calc(60deg);
@@ -25,13 +26,19 @@
 }
 
 .game {
-    margin: 70px;
+    margin: 40px auto 70px;
 }
 .juego {
     background: linear-gradient(var(--fondo), var(--seleccion));
     background-size: cover;
     height: auto;
     background-attachment: fixed;
+}
+.instruccion {
+    /* text-shadow: 1px 1px 4px var(--fondo2); */
+    font-family: 'Orbitron', sans-serif;
+    color: var(--morado);
+    font-size: 20px;
 }
 .titulo2 {
     font-family: 'Honk', system-ui;
@@ -61,9 +68,40 @@
     padding: 10px 50px;
     font-family: 'Orbitron', sans-serif;
     box-shadow: 0px 2px 5px var(--seleccion);
+    border-width: 0;
 
 }
 .btn-play:hover{
     box-shadow: 4px 4px 1px var(--fondo);
     color: var(--seleccion);
+}
+#separador {
+    text-align: center;
+    margin: 20px, 30px;
+    opacity: 60%;
+    border-width: 2px;
+    color: var(--fondo2);
+    border-style: dotted ;
+}
+.btn-jugada {
+    background: linear-gradient(var(--fondo), var(--morado));
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 50px;
+    color: var(--blanco);
+    font-weight: bold ;
+    width: 50px;
+    height: 50px;
+    border-width: 0;
+}
+.btn-jugada:hover {
+    background: linear-gradient(var(--fondo), var(--brillo));
+    border-radius: 50px;
+    color: var(--seleccion);
+    font-weight: bold ;
+    box-shadow: 2px 2px 5px var(--seleccion);
+    border-width: 0;
+}
+.result {
+    font-size: 20px;
+    color: var(--morado);
 }

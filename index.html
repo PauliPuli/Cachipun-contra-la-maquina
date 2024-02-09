@@ -35,40 +35,61 @@
         <h2 class="titulo2">máquina</h2>
       </div>
     </header>
-    <section>
-      <div class="d-flex justify-content-center my-4">
-        <div class="m-4">
-          <a
-            class="opciones m-4 px-4 custom-tooltip"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-title="Piedra"
-            id="rock"
-            ><i class="fa-regular fa-hand-back-fist fa-7x" id="piedra"></i
-          ></a>
-          <a
-            class="opciones m-4 px-4 custom-tooltip"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-title="Papel"
-            id="paper"
-            ><i class="fa-regular fa-hand fa-7x"></i
-          ></a>
-          <a
-            class="opciones m-4 px-4 custom-tooltip"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-title="Tijera"
-            id="scissors"
-            ><i class="fa-regular fa-hand-scissors fa-7x" id="tijera"></i
-          ></a>
+    <section class="my-3 mx-auto">
+      <div class="d-inline my-4 ">
+        <div>
+          <div class="container my-2">
+            <!-- agregar botones con atributos onclick y asignarle un valor. Aquí aplicas la variable máquina -->
+            <div class="row text-center">
+              <div class="col-5">
+              <h2 class="py-4 text-end instruccion">
+                Paso 1: Elige el número de jugadas
+              </h2>
+            </div>
+              <div class="col-7 text-center">
+                <button class="btn-jugada mx-3" id="uno" value="1">1</button>
+                <button class="btn-jugada mx-3" id="dos" value="2">2</button>
+                <button class="btn-jugada mx-3" id="tres" value="3">3</button>
+              </div>
+            </div>
+          </div>
+          <hr class="w-75 mx-auto" id="separador" />
+          <div class="container my-3">
+            <div class="row text-center">
+              <div class="col-5 my-auto">
+            <h2 class="text-end mx-auto instruccion">
+              Paso 2: Elige piedra, papel o tijera
+            </h2>
+          </div>
+            <div class="col-7 text-center my-4">
+            <a
+              class="opciones m-4 px-4 custom-tooltip"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Piedra"
+              id="rock"
+              ><i class="fa-regular fa-hand-back-fist fa-6x" id="piedra"></i
+            ></a>
+            <a
+              class="opciones m-4 px-4 custom-tooltip"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Papel"
+              id="paper"
+              ><i class="fa-regular fa-hand fa-6x"></i
+            ></a>
+            <a
+              class="opciones m-4 px-4 custom-tooltip"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Tijera"
+              id="scissors"
+              ><i class="fa-regular fa-hand-scissors fa-6x" id="tijera"></i
+            ></a>
+          </div>
+          </div>
+          </div>
         </div>
-      </div>
-      <div class="container my-4 mx-auto w-25">
-        <!-- agregar botones con atributos onclick y asignarle un valor. Aquí aplicas la variable máquina -->
-        <button id="uno" value="1">1</button>
-        <button id="dos" value="2">2</button>
-        <button id="tres" value="3">3</button>
       </div>
       <div class="container my-4 p-4">
         <div class="text-center">
@@ -78,15 +99,15 @@
         </div>
       </div>
     </section>
-    <article>
- <div id="resultado"></div>
+    <article class="my-2">
+      <div class="result text-center" id="resultado"></div>
     </article>
-    <!-- <footer class="bg-dark text-light py-1 mt-4 mb-auto fixed-bottom">
-      <p class="text-center">
+    <footer>
+      <p class="bg-dark text-light text-center p-3">
         Paulina San Martín Sandoval | Generación G64 | Full-stack JavaScript
         Trainee
       </p>
-    </footer> -->
+    </footer>
     <script
       src="https://kit.fontawesome.com/1434e1884b.js"
       crossorigin="anonymous"
